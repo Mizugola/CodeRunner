@@ -1,0 +1,21 @@
+LightAlex:
+    @Animator
+        path:"Sprites/LevelObjects/LightAlex"
+    @Collider
+        position:"relative"
+        solid:False
+        click:True
+        ?polygonPoints(str):
+            "0,0"
+            "117,0"
+            "117,109"
+            "0,109"
+    @LevelSprite
+        rotation:0
+        scale:1.0
+        layer:1
+        z-depth:1
+    @Script
+        priority:2
+        ?scriptList(str):
+            "Data/LevelObjects/LightAlex/LightAlex.lua"

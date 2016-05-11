@@ -1,0 +1,21 @@
+Wall:
+    @Animator
+        path:"Sprites/LevelObjects/Wall"
+    @Collider
+        position:"relative"
+        solid:True
+        click:True
+        ?polygonPoints(str):
+            "0,0"
+            "121,0"
+            "121,402"
+            "0,402"
+    @LevelSprite
+        rotation:0
+        scale:1.0
+        layer:1
+        z-depth:20
+    @Script
+        priority:0
+        ?scriptList(str):
+            "Data/LevelObjects/Wall/Wall.lua"

@@ -1,0 +1,21 @@
+Plateforme:
+    @Animator
+        path:"Sprites/LevelObjects/Plateforme"
+    @Collider
+        position:"relative"
+        solid:True
+        click:False
+        ?polygonPoints(str):
+            "0,0"
+            "50,0"
+            "50,10"
+            "0,10"
+    @LevelSprite
+        rotation:0
+        scale:1.0
+        layer:1
+        z-depth:20
+    @Script
+        priority:1
+        ?scriptList(str):
+            "Data/LevelObjects/Plateforme/Plateforme.lua"
