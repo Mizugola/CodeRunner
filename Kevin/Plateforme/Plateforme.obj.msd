@@ -2,8 +2,8 @@ Plateforme:
     @Animator
         path:"Sprites/LevelObjects/Plateforme"
     @Collider
-		position:"relative"
-        solid:False
+        position:"relative"
+        solid:True
         click:False
         ?polygonPoints(str):
             "0,0"
