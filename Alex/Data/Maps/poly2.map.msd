@@ -8,6 +8,8 @@ Meta:
     StartX:0
     StartY:820
 
+Objects:
+
 LevelSprites:
     @143748
         type:"ISLD_Sky"
@@ -272,15 +274,6 @@ LevelSprites:
         layer:1
         z-depth:2
 
-    @2839389
-        type:"SWMP_Swampverticalrock"
-        posX:938
-        posY:621
-        rotation:0
-        scale:1.000000
-        layer:1
-        z-depth:1
-
     @XxywXrcP
         type:"ISLD_Islandwithoutground"
         posX:-172
@@ -335,15 +328,21 @@ LevelSprites:
         layer:1
         z-depth:1
 
+
 Collisions:
-    @collider12
+    @collider0
         ?polygonPoints(str):
-            "5104,1041"
-            "4829,1062"
-            "4834,1082"
-            "6005,1079"
-            "5997,1000"
-            "5309,1001"
+            "1060,1032"
+            "1045,989"
+            "1045,631"
+            "952,632"
+            "952,993"
+            "314,987"
+            "348,935"
+            "333,913"
+            "0,905"
+            "0,1079"
+            "1013,1079"
 
     @collider1
         ?polygonPoints(str):
@@ -396,19 +395,14 @@ Collisions:
             "80,567"
             "27,592"
 
-    @collider0
+    @collider12
         ?polygonPoints(str):
-            "1060,1032"
-            "1045,989"
-            "1045,631"
-            "952,632"
-            "952,993"
-            "314,987"
-            "348,935"
-            "333,913"
-            "0,905"
-            "0,1079"
-            "1013,1079"
+            "5104,1041"
+            "4829,1062"
+            "4834,1082"
+            "6005,1079"
+            "5997,1000"
+            "5309,1001"
 
     @collider3
         ?polygonPoints(str):
@@ -438,82 +432,94 @@ Collisions:
             "3551,564"
             "3516,627"
 
+
 LevelObjects:
-    @door
-        type:"Door"
-        posX:161
-        posY:810
-       
-    @enemy
-        type:"EnemyTest"
-        posX:650
-        posY:800
-        
-    @Key0
-        type:"Key"
-        posX:500
-        posY:500
-    
-    @Key1
-        type:"Key"
-        posX:569
-        posY:500
-    
-    @Key2
-        type:"Key"
-        posX:638
-        posY:500
-        
-    @Key3
-        type:"Key"
-        posX:707
-        posY:500
-        
-    @Key4
-        type:"Key"
-        posX:776
-        posY:500
-    
-    @Key5
-        type:"Key"
-        posX:845
-        posY:500
-    
-    @Key6
-        type:"Key"
-        posX:500
-        posY:569
-    
-    @Key7
-        type:"Key"
-        posX:569
-        posY:569
-        
-    @Key8
-        type:"Key"
-        posX:638
-        posY:569
-        
-    @Key9
-        type:"Key"
-        posX:707
-        posY:569
-        
-    @KeyV
-        type:"Key"
-        posX:776
-        posY:569
-        
-    @KeyC
-        type:"Key"
-        posX:845
-        posY:569
-        
     @Digicode
         type:"Digicode"
         posX:0
         posY:0
-    
+
+    @Key0
+        type:"Key"
+        posX:500
+        posY:500
+
+    @Key1
+        type:"Key"
+        posX:569
+        posY:500
+
+    @Key2
+        type:"Key"
+        posX:638
+        posY:500
+
+    @Key3
+        type:"Key"
+        posX:707
+        posY:500
+
+    @Key4
+        type:"Key"
+        posX:776
+        posY:500
+
+    @Key5
+        type:"Key"
+        posX:845
+        posY:500
+
+    @Key6
+        type:"Key"
+        posX:500
+        posY:569
+
+    @Key7
+        type:"Key"
+        posX:569
+        posY:569
+
+    @Key8
+        type:"Key"
+        posX:638
+        posY:569
+
+    @Key9
+        type:"Key"
+        posX:707
+        posY:569
+
+    @KeyC
+        type:"Key"
+        posX:845
+        posY:569
+
+    @KeyV
+        type:"Key"
+        posX:776
+        posY:569
+
+    @door
+        type:"Door"
+        posX:161
+        posY:810
+
+    @enemy
+        type:"EnemyTest"
+        posX:646
+        posY:789
+        
+    @ObjectManager
+        type:"ObjectManager"
+        posX:0
+        posX:0
+        
+    @Wall
+        type:"Wall"
+        posX:500
+        posY:600
+
 Script:
     ?gameScripts(str):
         "Data/GameScripts/Maps/poly2.lua"
+    

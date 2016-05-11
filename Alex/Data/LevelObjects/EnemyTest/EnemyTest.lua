@@ -28,8 +28,6 @@ function Local.Init()
     t = 0;
     
     code = "";
-    
-    This:useCustomTrigger("")
 end
 
 function Local.Update(param)
@@ -60,7 +58,6 @@ function Keys.Click(param)
     if param.KeyNum == "V" then
         if code == "666" then 
             This:Collider():setSolid(false);
-            This:LevelSprite():setRotation(0);
             clicked = true;
             code = "";
         else
@@ -68,11 +65,9 @@ function Keys.Click(param)
         end
     elseif param.KeyNum == "C" then
         This:Collider():setSolid(true);
-        This:LevelSprite():setRotation(0);
         clicked = false;
         code = "";
     else
         code = code .. param.KeyNum;
-        print(code);
     end
 end

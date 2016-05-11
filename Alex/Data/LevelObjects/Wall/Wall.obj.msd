@@ -1,21 +1,21 @@
-Key:
+Wall:
     @Animator
-        path:"Sprites/LevelObjects/Key"
+        path:"Sprites/LevelObjects/Wall"
     @Collider
         position:"relative"
-        solid:False
+        solid:True
         click:True
         ?polygonPoints(str):
             "0,0"
-            "64,0"
-            "64,64"
-            "0,64"
+            "121,0"
+            "121,402"
+            "0,402"
     @LevelSprite
         rotation:0
         scale:1.0
         layer:1
         z-depth:20
     @Script
-        priority:2
+        priority:0
         ?scriptList(str):
-            "Data/LevelObjects/Key/Key.lua"
+            "Data/LevelObjects/Wall/Wall.lua"
