@@ -5,7 +5,7 @@ Import("Core.Animation.Animator");
 
 GetHook("TriggerDatabase");
 
-This:UseLocalTrigger("Init");
+This:useLocalTrigger("Init");
 
 function Local.Init()
     This:useCustomTrigger("Map", "Keys", "*");
@@ -17,13 +17,17 @@ function Local.Init()
 end
 
 function Keys.Click(param)
-    if param.keyNum == "V" then
+    if param.KeyNum == "V" then
         if code == ValidCode then
-            Door.Open();
+            DigitalTrigger:enableTrigger("On");
+            code = "";
+        else
+            code = "";
         end
-    else if param.keyNum = "C" then
+    elseif param.KeyNum == "C" then
+        DigitalTrigger:enableTrigger("Off");
         code = "";
     else
-        code = code .. param.keyNum;
+        code = code .. param.KeyNum;
     end
 end

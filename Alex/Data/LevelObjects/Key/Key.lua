@@ -3,8 +3,8 @@ Import("Core.Animation.Animator");
 
 GetHook("TriggerDatabase");
 
-This:UseLocalTrigger("Init");
-This:UseLocalTrigger("Click");
+This:useLocalTrigger("Init");
+This:useLocalTrigger("Click");
 
 function Local.Init()
     keyNum = Require("KeyNum");

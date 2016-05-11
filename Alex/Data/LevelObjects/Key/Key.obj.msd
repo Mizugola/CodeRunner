@@ -3,7 +3,7 @@ Key:
         path:"Sprites/LevelObjects/Key"
     @Collider
         position:"relative"
-        solid:False
+        solid:True
         click:True
         ?polygonPoints(str):
             "0,0"
@@ -14,7 +14,7 @@ Key:
         rotation:0
         scale:1.0
         layer:1
-        z-depth:21
+        z-depth:20
     @Script
         priority:2
         ?scriptList(str):

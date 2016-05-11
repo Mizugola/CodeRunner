@@ -1,16 +1,15 @@
-Door:
+TutorialMonster:
     @Animator
-        path:"Sprites/LevelObjects/Door"
+        path:"Sprites/LevelObjects/TutorialMonster"
     @Collider
         position:"relative"
-        solid:True
+        solid:False
         click:True
         ?polygonPoints(str):
             "0,0"
-            "11,0"
-            "11,100"
-            "0,100"
-        offsetX:9
+            "57,0"
+            "57,72"
+            "0,72"
     @LevelSprite
         rotation:0
         scale:1.0
@@ -19,4 +18,4 @@ Door:
     @Script
         priority:0
         ?scriptList(str):
-            "Data/LevelObjects/Door/Door.lua"
+            "Data/LevelObjects/TutorialMonster/TutorialMonster.lua"

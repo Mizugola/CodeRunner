@@ -1,22 +1,21 @@
-Door:
+Button:
     @Animator
-        path:"Sprites/LevelObjects/Door"
+        path:"Sprites/LevelObjects/Button"
     @Collider
         position:"relative"
-        solid:True
+        solid:False
         click:True
         ?polygonPoints(str):
             "0,0"
-            "11,0"
-            "11,100"
-            "0,100"
-        offsetX:9
+            "50,0"
+            "50,50"
+            "0,50"
     @LevelSprite
         rotation:0
         scale:1.0
         layer:1
         z-depth:20
     @Script
-        priority:0
+        priority:1
         ?scriptList(str):
-            "Data/LevelObjects/Door/Door.lua"
+            "Data/LevelObjects/Button/Button.lua"

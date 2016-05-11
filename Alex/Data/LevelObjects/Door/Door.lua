@@ -35,15 +35,15 @@ function Door.Close()
     This:Collider():setPointRelativePosition(2, 11, 100);
 end
 
-function Local.Click()
-    if opened then
-        Door.Close();
-        opened = false;
-    elseif (doorControlled and doorUnlocked) or (not doorControlled) then
-        Door.Open();
-        opened = true;
-    end
-end
+--function Local.Click()
+--    if opened then
+--        Door.Close();
+--        opened = false;
+--    elseif (doorControlled and doorUnlocked) or (not doorControlled) then
+--        Door.Open();
+--        opened = true;
+--    end
+--end
 
 function DoorController.On()
     doorUnlocked = true;
@@ -52,4 +52,5 @@ end
 
 function DoorController.Off()
     doorUnlocked = false;
+    Door.Close();
 end
