@@ -20,6 +20,24 @@ LevelSprites:
         layer:10
         z-depth:1
 
+    @Nt2isEpt
+        type:"ISLD_PartSky"
+        posX:3792
+        posY:0
+        rotation:0
+        scale:1.000000
+        layer:1
+        z-depth:30
+
+    @UY3TxqRF
+        type:"ISLD_Background"
+        posX:6234
+        posY:-38
+        rotation:0
+        scale:1.000000
+        layer:1
+        z-depth:29
+
     @3NPduqFV
         type:"ISLD_Island1"
         posX:6359
@@ -92,6 +110,15 @@ LevelSprites:
         layer:1
         z-depth:4
 
+    @hNtEVNBy
+        type:"ISLD_Islandwithoutground"
+        posX:6676
+        posY:805
+        rotation:0
+        scale:1.000000
+        layer:1
+        z-depth:4
+
     @MqvViAkn
         type:"CAVE_Ground2Reversed"
         posX:1316
@@ -112,7 +139,7 @@ LevelSprites:
 
     @pkhvShMm
         type:"ISLD_Island1"
-        posX:3860
+        posX:3859
         posY:187
         rotation:0
         scale:1.000000
@@ -553,8 +580,8 @@ LevelSprites:
 
     @zid0hjkp
         type:"ISLD_Island3Turned1"
-        posX:6640
-        posY:-201
+        posX:6637
+        posY:-212
         rotation:0
         scale:1.000000
         layer:1
